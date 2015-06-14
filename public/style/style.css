@@ -20,3 +20,7 @@ body {
     color: white;
     background-color: green;
 }
+
+.list-group-item {
+    cursor: pointer;
+}
