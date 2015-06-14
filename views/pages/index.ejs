@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>PiRemote</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row vertical-center-row">
+
+                <div class="col-xs-12 text-center">
+                    <div id="files">
+                        
+                        <% if (files.length) { %>
+                            <ul class="list-group">
+                                <% files.forEach(function(filename){ %>
+                                    <li class="list-group-item"
+                                        data-filename="<%= filename %>">
+                                        <%= filename.replace(/_/g, ' ').replace('.mp4', '') %>
+                                    </li>
+                                <% }) %>
+                            </ul>
+                        <% } %>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+    <script src="js/scripts.js"></script>
+
+</html>

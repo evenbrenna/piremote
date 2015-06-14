@@ -1,0 +1,15 @@
+{
+  "name": "piremote",
+  "version": "1.0.0",
+  "description": "Playing around with node and raspbian",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Even Brenna",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.4",
+    "ps-tree": "^1.0.0"
+  }
+}
