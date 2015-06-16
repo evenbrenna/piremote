@@ -1,9 +1,6 @@
 'use strict';
 
-var list = document.querySelector('#files')
-var items = document.querySelectorAll('.list-group-item')
-
-function show() {
+function showList(list, items) {
     // Animate the list
     dynamics.animate(list, {
         opacity: 1,
@@ -40,8 +37,8 @@ function show() {
 
 }
 
-function hide() {
-    // Animate the popover
+function hideList(list) {
+    // Animate the list
     dynamics.animate(list, {
         opacity: 0,
         scale: .1
@@ -52,5 +49,3 @@ function hide() {
     })
 
 }
-
-show()
