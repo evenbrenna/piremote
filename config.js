@@ -1,7 +1,7 @@
 'use strict';
 
 var config = {
-    videoPath: '/home/pi/video/'
+    videoPath: 'video/'
 }
 
 module.exports = config;

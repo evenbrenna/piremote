@@ -6,6 +6,10 @@ body {
     background-color: #000;
 }
 
+p, a, h1 {
+    color: #fff;
+}
+
 .container {
     display: table;
     vertical-align: middle;
@@ -17,8 +21,8 @@ body {
 }
 
 .playing {
-    color: white;
-    background-color: green;
+    color: green;
+    font-weight: bold;
 }
 
 .list-group-item {

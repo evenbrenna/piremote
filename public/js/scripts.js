@@ -2,6 +2,7 @@
 
 $(".list-group-item").on("click", function() {
     var item = $(this);
+
     if (item.hasClass('playing')) {
         $.get('/stop', function(data) {
             item.removeClass('playing');
